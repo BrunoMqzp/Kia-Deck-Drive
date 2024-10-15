@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using KDDC;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Jugador : MonoBehaviour
 {
@@ -26,6 +27,12 @@ public class Jugador : MonoBehaviour
     public SistemaPuntos sistemaPuntos;
     public ActualizarPuntuaciones actualizarPuntuaciones;
     private bool puntosEntregados = false;
+
+    // animacion
+    public GameObject objetoEnemigo;
+    private Animator anim;
+    private bool animacionDerrotaEjecutada = false;
+
     void Start()
     {
         salud = FindObjectOfType<Salud>();
@@ -47,6 +54,8 @@ public class Jugador : MonoBehaviour
         enemigo = FindObjectOfType<Enemigo>();
         saludenemigo = FindObjectOfType<SaludEnemigo>();
         sistemaPuntos = FindObjectOfType<SistemaPuntos>();
+        endgame = FindObjectOfType<GameControlador>();
+        anim = objetoEnemigo.GetComponent<Animator>();
     }
 
     void Update()
@@ -80,14 +89,17 @@ public class Jugador : MonoBehaviour
             endgame.GameOver();
             puntosEntregados = true;
         }
-        if (enemigo.enemigo_Vida <= 0 && !puntosEntregados)
+        if (enemigo.enemigo_Vida <= 0 && !puntosEntregados && !animacionDerrotaEjecutada)
         {
-            endgame = FindObjectOfType<GameControlador>();
-            sistemaPuntos.PuntosAlGanar();
-            actualizarPuntuaciones = FindObjectOfType<ActualizarPuntuaciones>();
-            actualizarPuntuaciones.GuardarPuntaje();
-            endgame.Victory();
-            puntosEntregados = true;
+            //endgame = FindObjectOfType<GameControlador>();
+            //sistemaPuntos.PuntosAlGanar();
+            //actualizarPuntuaciones = FindObjectOfType<ActualizarPuntuaciones>();
+            //actualizarPuntuaciones.GuardarPuntaje();
+            animacionDerrotaEjecutada = true;
+            anim.Play("Derrota_enemigo");
+            //endgame.Victory();
+            //puntosEntregados = true;
+            StartCoroutine(EsperarYTerminarJuego());
         }
     }
 
@@ -108,5 +120,16 @@ public class Jugador : MonoBehaviour
         CartasJugadas.Clear();
 
 
+    }
+
+    private IEnumerator EsperarYTerminarJuego()
+    {
+        yield return new WaitForSeconds(1f);
+        endgame = FindObjectOfType<GameControlador>();
+        sistemaPuntos.PuntosAlGanar();
+        actualizarPuntuaciones = FindObjectOfType<ActualizarPuntuaciones>();
+        actualizarPuntuaciones.GuardarPuntaje();
+        endgame.Victory();
+        puntosEntregados = true;
     }
 }

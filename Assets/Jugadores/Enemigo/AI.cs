@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using KDDC;
 
 public class AI_easy : MonoBehaviour
@@ -11,6 +13,12 @@ public class AI_easy : MonoBehaviour
     public SaludEnemigo s_salud;
     public EscudoEnemigo s_escudo;
     public Salud salud;
+
+    private Animator anim;
+    AudioSource efectos;
+
+    public AudioClip[] Sonidos;
+    public GameObject objetoEnemigo;
 
     // Evento para indicar el cambio de turno
     public delegate void CambioDeTurno(bool esTurnoIA);
@@ -23,6 +31,12 @@ public class AI_easy : MonoBehaviour
     public int CostoAtaque = 1;
     public int CostoCurar = 1;
     public int CostoEscudo1 = 1;
+
+    void Start()
+    {
+        efectos = GetComponent<AudioSource>();
+        anim = objetoEnemigo.GetComponent<Animator>();
+    }
 
     // Función para atacar al enemigo
     void AtacarEnemigo()
@@ -107,14 +121,23 @@ public class AI_easy : MonoBehaviour
             if (random < probabilidadCurar)
             {
                 CurarIA();
+                anim.Play("Vida_enemigo");
+                efectos.clip = Sonidos[1];
+                efectos.Play();
             }
             else if (random < probabilidadCurar + probabilidadEscudo)
             {
                 AumentarEscudo();
+                anim.Play("Escudo_enemigo");
+                efectos.clip = Sonidos[2];
+                efectos.Play();
             }
             else if (random < probabilidadAtacar)
             {
                 AtacarEnemigo();
+                anim.Play("Ataque_enemigo");
+                efectos.clip = Sonidos[0];
+                efectos.Play();
             }
         }
     }
