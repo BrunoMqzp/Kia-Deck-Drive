@@ -1508,7 +1508,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipsText: {fileID: 1592801065}
   tips:
-  - HOLA
+  - "Tener cartas defensivas listas puede salvarte en momentos cr\xEDticos."
+  - "La gesti\xF3n adecuada de mana es crucial para usar tus cartas de manera eficiente.
+    No gastes todo en una sola jugada."
+  - Conoce los diferentes beneficios que kia ofrece.
+  - '"Kia" significa "levantarse de Asia", destacando su origen y crecimiento.'
+  - "Kia est\xE1 desarrollando soluciones para movilidad compartida y el\xE9ctrica
+    en las ciudades del futuro."
+  - "La empresa apunta a ser neutral en carbono para 2045, con inversiones en energ\xEDas
+    renovables."
+  - "Kia cuenta con un prestigioso estudio de dise\xF1o en Frankfurt, Alemania, que
+    crea sus modelos m\xE1s innovadores."
+  - Algunas cartas de beneficios funcionan mejor cuando se usan juntas. Experimenta
+    con diferentes combinaciones para maximizar sus efectos.
+  - "No descuides la salud de tu avatar. Si baja demasiado, perder\xE1s batallas
+    clave."
+  - Las cartas defensivas son clave en batallas largas. Incluir algunas puede marcar
+    la diferencia entre ganar o perder.
   tipCount: 0
 --- !u!114 &624065583
 MonoBehaviour:
