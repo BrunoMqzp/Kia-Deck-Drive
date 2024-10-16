@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 0
   Costo: 0
   descripcion: Incapacidad o perdidas organicas compensacion proporcional
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: d4b8b46f1eedc5a41b43da47919c61ee, type: 3}
   damageType: 

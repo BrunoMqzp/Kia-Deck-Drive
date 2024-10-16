@@ -2168,7 +2168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 845, y: 255}
+  m_AnchoredPosition: {x: -834, y: 83}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &695834411
@@ -2803,7 +2803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 844.99994, y: 191.79999}
+  m_AnchoredPosition: {x: -834, y: -192}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903977062
@@ -5433,7 +5433,7 @@ MonoBehaviour:
   CartaPrefab: {fileID: 4290017347507498835, guid: 4d5e8727e31a1794bac89001e92da04f, type: 3}
   modificarMazo: {fileID: 136885329}
   GirarCarta: -7
-  EspacioCarta: 200
+  EspacioCarta: 150
   VerticalCarta: 100
   MaximoMazo: 12
   CartasActivas: []

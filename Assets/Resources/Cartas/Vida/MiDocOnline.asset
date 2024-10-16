@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 1
   Costo: 3
   descripcion: Nutriologo y psicologos gratuitos
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: d0eace5ee14d9a8409464bbd1dbb9897, type: 3}
   damageType: 

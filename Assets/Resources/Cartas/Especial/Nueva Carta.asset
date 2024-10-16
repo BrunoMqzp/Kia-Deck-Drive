@@ -19,6 +19,6 @@ MonoBehaviour:
   damageMax: 0
   escudo: 0
   Costo: 4
-  descripcion: Tu compania de seguros de apoya
-  imagen: {fileID: 0}
+  descripcion: Tu compania de seguros de apoya x2 Damage
+  imagen: {fileID: 21300000, guid: a488418281327dd49be17bbab0931b2f, type: 3}
   damageType: 00000000

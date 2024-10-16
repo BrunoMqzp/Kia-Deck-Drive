@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 3
   Costo: 3
   descripcion: Fondo de ahorro de 11%
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 2d68756f09f1205408926fcc9161df17, type: 3}
   damageType: 
