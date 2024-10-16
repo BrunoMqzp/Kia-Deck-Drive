@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using TMPro;
 using TMPro.Examples;
 using Unity.Burst.Intrinsics;
 using UnityEngine;
@@ -11,8 +12,8 @@ using static UnityEngine.UIElements.UxmlAttributeDescription;
 public class PUNTUACIONES : MonoBehaviour
 {
     public static PUNTUACIONES instance;
-    public Text scoreText;
-    public Text PuntuacionMaxText;
+    public TMP_Text scoreText;
+    public TMP_Text PuntuacionMaxText;
     public int score = 0;
     public int PuntuacionMax = 0;
     void Awake()

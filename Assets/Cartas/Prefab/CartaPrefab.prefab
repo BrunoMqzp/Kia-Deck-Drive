@@ -1008,6 +1008,7 @@ GameObject:
   - component: {fileID: 428056191977695893}
   - component: {fileID: 7215290976323141042}
   - component: {fileID: 8653262652046526039}
+  - component: {fileID: 94482454441869673}
   m_Layer: 0
   m_Name: CartaPrefab
   m_TagString: Untagged
@@ -1113,11 +1114,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4290017347507498835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1248229e38d6f0f45938b8b726252bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnos: {fileID: 0}
+  DatosCarta: {fileID: 0}
+  jugador: {fileID: 0}
+  ElegirEscala: 1.1
+  cardPlay: {x: 0, y: 400}
+  playPosition: {x: 0, y: 400, z: 0}
+  glowEffect: {fileID: 1320736992518265021}
+  playArrow: {fileID: 3696142376470613646}
+  lerpFactor: 0.1
+--- !u!114 &94482454441869673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4290017347507498835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7846aecc314aa614185c6ff9b1283ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnos: {fileID: 0}
+  DatosCarta: {fileID: 0}
+  jugador: {fileID: 0}
   ElegirEscala: 1.1
   cardPlay: {x: 0, y: 400}
   playPosition: {x: 0, y: 400, z: 0}

@@ -8,6 +8,7 @@ public class GenerateLabels : MonoBehaviour
 {
     public string UserName; //to share the variable with onGUI function
     public LOGINUEVO LOGIN;
+    public LoginManager LoginManager;
     public TMP_Text Tmp;
     void Start()
     {
@@ -31,7 +32,7 @@ public class GenerateLabels : MonoBehaviour
                     {
                         string FirstName = (string)reader["nombre"];
                         Debug.Log("prueba");
-                        if (FirstName == LOGINUEVO.inputUsername)
+                        if (FirstName == LoginManager.username)
                         {
                             Debug.Log("Usuario encontrado: " + FirstName);
                             //string LastName = (string)reader["UserPrincipalName"];

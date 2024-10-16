@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using KDDC;
 
 public class AIMEDIUM : MonoBehaviour
@@ -21,6 +23,18 @@ public class AIMEDIUM : MonoBehaviour
     // Nuevas variables para la lógica más compleja
     private float umbralVidaBaja = 0.3f; // Umbral para considerar que la IA tiene poca vida
     private float umbralEscudoBajo = 0.2f; // Umbral para considerar que la IA tiene poco escudo
+
+    private Animator anim;
+    AudioSource efectos;
+
+    public AudioClip[] Sonidos;
+    public GameObject objetoEnemigo;
+
+    void Start()
+    {
+        efectos = GetComponent<AudioSource>();
+        anim = objetoEnemigo.GetComponent<Animator>();
+    }
 
     // Función para atacar al enemigo
     void AtacarEnemigo()
@@ -94,11 +108,17 @@ public class AIMEDIUM : MonoBehaviour
             {
                 // Priorizar la curación si la vida es baja
                 CurarIA();
+                anim.Play("Vida_enemigo");
+                efectos.clip = Sonidos[1];
+                efectos.Play();
             }
             else if (escudoRelativoIA < umbralEscudoBajo)
             {
                 // Aumentar el escudo si es bajo
                 AumentarEscudo();
+                anim.Play("Escudo_enemigo");
+                efectos.clip = Sonidos[2];
+                efectos.Play();
             }
             else
             {
@@ -107,14 +127,23 @@ public class AIMEDIUM : MonoBehaviour
                 if (random < probabilidadCurar)
                 {
                     CurarIA();
+                    anim.Play("Vida_enemigo");
+                    efectos.clip = Sonidos[1];
+                    efectos.Play();
                 }
                 else if (random < probabilidadCurar + probabilidadEscudo)
                 {
                     AumentarEscudo();
+                    anim.Play("Escudo_enemigo");
+                    efectos.clip = Sonidos[2];
+                    efectos.Play();
                 }
                 else
                 {
                     AtacarEnemigo();
+                    anim.Play("Ataque_enemigo");
+                    efectos.clip = Sonidos[0];
+                    efectos.Play();
                 }
             }
         }

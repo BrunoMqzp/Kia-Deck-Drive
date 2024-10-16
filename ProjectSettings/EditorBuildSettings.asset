@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/PantallaInicialJuego.unity
     guid: 27996168ee3e199479bdacd5e73041b9
   - enabled: 1
+    path: Assets/Scenes/BattleEasy.unity
+    guid: 5314a4ca1b70a5e499bf8b8cd8b31748
+  - enabled: 1
+    path: Assets/Scenes/BattleMedium.unity
+    guid: 905407496c911b5468f9f43b573cee76
+  - enabled: 1
     path: Assets/Scenes/Battle.unity
     guid: 8a1ecefc6ec44064cbdcc088eefe527e
   m_configObjects: {}
