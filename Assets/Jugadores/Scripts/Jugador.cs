@@ -25,7 +25,8 @@ public class Jugador : MonoBehaviour
     public Enemigo enemigo;
     public SaludEnemigo saludenemigo;
     public SistemaPuntos sistemaPuntos;
-    public ActualizarPuntuaciones actualizarPuntuaciones;
+    //public ActualizarPuntuaciones actualizarPuntuaciones;
+    public PartidaManager actualizarPuntuaciones;
     private bool puntosEntregados = false;
 
     // animacion
@@ -84,8 +85,8 @@ public class Jugador : MonoBehaviour
         {
             endgame = FindObjectOfType<GameControlador>();
             sistemaPuntos.PuntosAlPerder();
-            actualizarPuntuaciones = FindObjectOfType<ActualizarPuntuaciones>();
-            actualizarPuntuaciones.GuardarPuntaje();
+            actualizarPuntuaciones = FindObjectOfType<PartidaManager>();
+            actualizarPuntuaciones.OnSubmitPartida();
             endgame.GameOver();
             puntosEntregados = true;
         }
@@ -127,8 +128,8 @@ public class Jugador : MonoBehaviour
         yield return new WaitForSeconds(1f);
         endgame = FindObjectOfType<GameControlador>();
         sistemaPuntos.PuntosAlGanar();
-        actualizarPuntuaciones = FindObjectOfType<ActualizarPuntuaciones>();
-        actualizarPuntuaciones.GuardarPuntaje();
+        actualizarPuntuaciones = FindObjectOfType<PartidaManager>();
+        actualizarPuntuaciones.OnSubmitPartida();
         endgame.Victory();
         puntosEntregados = true;
     }
