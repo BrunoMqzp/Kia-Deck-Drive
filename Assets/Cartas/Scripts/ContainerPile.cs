@@ -17,6 +17,7 @@ public class ContainerPile : MonoBehaviour
 
     private void Start()
     {
+        Resources.UnloadUnusedAssets();
         mazogestion = FindObjectOfType<Mazo>();
     }
     void Update()

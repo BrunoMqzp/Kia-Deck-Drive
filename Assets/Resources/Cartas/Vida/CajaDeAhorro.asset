@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 0
   Costo: 3
   descripcion: Tienes disponibilidad a una caja de ahorro
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 80b9a93c3fcb2b747a510a526eba1d55, type: 3}
   damageType: 

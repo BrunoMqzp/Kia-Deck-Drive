@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 0
   Costo: 2
   descripcion: Muerte Natural 24 meses de sueldo
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: d4b8b46f1eedc5a41b43da47919c61ee, type: 3}
   damageType: 

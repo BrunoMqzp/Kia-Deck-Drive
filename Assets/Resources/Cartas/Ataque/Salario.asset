@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 0
   Costo: 2
   descripcion: Salario de $24,600
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 96b67e8528966364dba4948c63d4921b, type: 3}
   damageType: 

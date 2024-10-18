@@ -11,7 +11,7 @@ public class LoginManager : MonoBehaviour
     public TMP_Text messageText;
     public string NombreEscena;
     public static string username;
-    private string apiUrl = "http://localhost:5000/api/login"; // Your API endpoint
+    private string apiUrl = "http://localhost:5000/api/usersgame/logingame"; // Your API endpoint
 
     public void OnLoginButtonClick()
     {

@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 2
   Costo: 5
   descripcion: Cuentas con la compania de seguros MetLife +1 Carta
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: ef2ce73d45807f2428d347ce44a489c0, type: 3}
   damageType: 01000000

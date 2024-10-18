@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 4
   Costo: 5
   descripcion: Cuentas con setguros de vida y gastos funerarios
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 13812476ad3e7c84fa4b84ebc53b236f, type: 3}
   damageType: 

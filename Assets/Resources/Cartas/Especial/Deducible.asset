@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 0
   Costo: 0
   descripcion: Aumenta tus turnos +2
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: 60ada4d997311f64aaf3e14a33294b30, type: 3}
   damageType: 02000000

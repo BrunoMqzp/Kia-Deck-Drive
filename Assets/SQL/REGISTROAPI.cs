@@ -11,7 +11,7 @@ public class RegistrationManager : MonoBehaviour
     public InputField persNoInput;
     public TMP_Text messageText;
 
-    private string apiUrl = "http://localhost:5000/api/register"; // Your API endpoint
+    private string apiUrl = "http://localhost:5000/api/usersgame/registergame"; // Your API endpoint
 
     public void OnRegisterButtonClick()
     {

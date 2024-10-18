@@ -20,5 +20,5 @@ MonoBehaviour:
   escudo: 0
   Costo: 3
   descripcion: Un empleado cuenta con 33 dias de aguinaldo
-  imagen: {fileID: 0}
+  imagen: {fileID: 21300000, guid: f165bcdd6703ec041b0e27e3dc9548a9, type: 3}
   damageType: 
