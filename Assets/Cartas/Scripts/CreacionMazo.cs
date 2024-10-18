@@ -18,6 +18,7 @@ public class CreacionMazo : MonoBehaviour
 
     private void Start()
     {
+        Resources.UnloadUnusedAssets();
         Carta[] cartas = Resources.LoadAll<Carta>("Cartas");
         CartasTotales.AddRange(cartas);
     }

@@ -13,7 +13,7 @@ public class PartidaManager : MonoBehaviour
     public TMP_Text messageText;
     public Turnos turnos;
 
-    private string apiUrl = "http://localhost:5000/api/partidas"; // Your API endpoint
+    private string apiUrl = "http://localhost:5000/api/usersgame/partidasgame"; // Your API endpoint
 
     public void OnSubmitPartida()
     {

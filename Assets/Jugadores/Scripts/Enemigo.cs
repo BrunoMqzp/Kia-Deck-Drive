@@ -23,6 +23,7 @@ public class Enemigo : MonoBehaviour
 
     void Start()
     {
+        Resources.UnloadUnusedAssets();
         enemigo_salud = FindObjectOfType<SaludEnemigo>();
         if (enemigo_salud != null)
         {

@@ -4613,6 +4613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249617666}
   - component: {fileID: 1249617667}
+  - component: {fileID: 1249617668}
   m_Layer: 0
   m_Name: NOMBREUSUARIO
   m_TagString: Untagged
@@ -4643,7 +4644,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249617665}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74c8df4cae66a2045877aeb367b04783, type: 3}
   m_Name: 
@@ -4651,6 +4652,22 @@ MonoBehaviour:
   UserName: 
   LOGIN: {fileID: 0}
   LoginManager: {fileID: 0}
+  Tmp: {fileID: 1715223647}
+--- !u!114 &1249617668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249617665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b51d73ded2ae0c47a07418abcb12306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UserName: 
+  LOGIN: {fileID: 0}
+  loginManager: {fileID: 0}
   Tmp: {fileID: 1715223647}
 --- !u!1 &1261248237
 GameObject:

@@ -36,6 +36,7 @@ public class Jugador : MonoBehaviour
 
     void Start()
     {
+        Resources.UnloadUnusedAssets();
         salud = FindObjectOfType<Salud>();
         if (salud != null)
         {

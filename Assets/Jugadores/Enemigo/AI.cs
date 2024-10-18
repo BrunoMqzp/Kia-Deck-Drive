@@ -34,6 +34,7 @@ public class AI_easy : MonoBehaviour
 
     void Start()
     {
+        Resources.UnloadUnusedAssets();
         efectos = GetComponent<AudioSource>();
         anim = objetoEnemigo.GetComponent<Animator>();
     }
